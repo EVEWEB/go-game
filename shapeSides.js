@@ -23,8 +23,8 @@ regl({
     }`,
 
   attributes: {
-    position: (new Array(4)).fill().map((x, i) => {
-      var theta = 2.0 * Math.PI * i / 4
+    position: (new Array(360)).fill().map((x, i) => {
+      var theta = 2.0 * Math.PI * i / 4 
       return [ Math.sin(theta), Math.cos(theta) ]
 })
 },
@@ -33,10 +33,13 @@ regl({
     color: [1, 0, 0, 1]
   },
 
-elements: [
-  [0,1],
-  [1,2]
-]
+
+  elements: [
+    [0, 1],
+    [1, 2],
+    [2, 3],
+    [3, 4]
+  ],
 
   lineWidth: 3
 })()
