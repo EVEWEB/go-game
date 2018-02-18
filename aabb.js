@@ -18,9 +18,9 @@ regl({
     }`,
 
   attributes: {
-    position: ((new Array(100).fill(2).map((v,i)=>i%10).map((v,i)=>[v,Math.floor(i/10)])))
+    position: ((new Array(cols).fill(2).map((v,i)=>i%10).map((v,i)=>[v,Math.floor(i/10)])))
 
-//1: Array [ 1, 0 ] 2: Array [ 2, 0 ] 3: Array [ 3, 0 ] 4: Array [ 4, 0 ] 5: Array [ 5, 0 ] 6: Array [ 6, 0 ] 7: Array [ 7, 0 ] 8: Array [ 8, 0 ] 9: Array [ 9, 0 ] 10: Array [ 0, 1 
+//1: Array [ 1, 0 ] 2: Array [ 2, 0 ] 3: Array [ 3, 0 ] 4: Array [ 4, 0 ] 5: Array [ 5, 0 ] 6: Array [ 6, 0 ] 7: Array [ 7, 0 ] 8: Array [ 8, 0 ] 9: Array [ 9, 0 ] 10: Array [ 0, 1
       //new Array(cols).fill(2).map((v,i)=>cols%i).map((v,i)=>[v,Math.floor(i/cols)-v]))
   },
 
