@@ -70,16 +70,8 @@ class goPiece{
         }
 
   return {liberties: cover-neighbours, cover: cover, neighbours: neighbours};
-}   
+}
 
-
-  freeAndFriend(player,checkPlayer){
-    if(this.exclude(checkPlayer))
-      return false;
-    if(player==this.player && this.hasFreedom(checkPlayer))
-      return true;
-  return false
-  }
 
 
   exclude(checkPlayer){
@@ -126,6 +118,8 @@ class goPiece{
 
   return !blockCheck;
   }
+
+  
 
   static cannotEscape([x,y],player,checkPlayer)
   {
